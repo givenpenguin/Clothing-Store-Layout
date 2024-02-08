@@ -1,0 +1,311 @@
+.header {
+	&__main-menu {
+
+	}
+}
+.main-menu {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 80;
+	backdrop-filter: blur(5px);
+
+    &__container {
+        display: flex;
+        min-height: 80px;
+        align-items: center;
+		justify-content: space-between;
+    }
+	
+    &__logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: inherit;
+    }
+
+    &__menu {
+       
+    }
+
+	@media (max-width: 479px) {
+        &__container {
+            min-height: 70px;
+        }
+		&__menu {
+			padding: 0px 0px 0px 20px;
+		}
+    }
+}
+.menu {
+
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+		white-space: nowrap;
+    }
+
+	&__item {
+
+		&:not(:last-child) {
+			margin: 0 25px 0 0;
+		}
+	}
+
+	&__link {
+
+	}
+	
+    @media (max-width: 479px) {
+        &__item:not(:last-child) {
+			margin: 0 10px 0 0;
+		}
+    }
+}
+
+.link {
+	color: inherit;	
+	z-index: 90;
+
+	&__button {
+		transition: all 0.2s ease;
+		cursor: pointer;
+
+		&:hover {
+			color: #b2b2b2;
+			transition: all 0.2s ease;
+		}
+
+		& path {
+			transition: all 0.2s ease;
+		}
+
+		&:hover path {
+			stroke: #b2b2b2;
+		}
+	}	
+}
+
+.cart-button {
+
+	&__counter {
+
+		&::before {
+			content: '(';
+		}
+
+		&::after {
+			content: ')';
+		}
+	}
+}
+
+/*------------------------------------*/
+/*---------------Drawer---------------*/
+/*------------------------------------*/
+
+.header {
+
+	&__drawer {
+		
+	}
+}
+.drawer {
+	position: fixed;
+    width: 420px;
+	height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 99;
+	transform: translateX(120%);
+	transition: 0.4s;
+
+	overflow-y: scroll;
+	&::-webkit-scrollbar { width: 0; }
+	-ms-overflow-style: none;
+
+	&__container {
+		position: absolute;
+		width: 100%;
+		min-height: 100%;
+		right: 0;
+		padding: 0 15px;
+		background-color: #ffffff;
+		// box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		padding: 30px 20px;
+		height: 100%;
+	}
+
+	&__header-block {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 50px;
+	}
+
+	&__items {
+		flex: 1 1 auto;
+		margin: 10px 0px 0px 0px;
+	}
+	
+	&__column {
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__item-cart {
+
+	}
+
+	@media (max-width: 900px) {
+		width: 520px;
+
+		&__header-block {
+			min-height: 70px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		width: 100%;
+		padding: 0;
+	}
+
+	@media (max-width: 400px) {
+		&__body {
+			padding: 20px 20px;
+		}
+	}
+
+	&.active {
+		transform: translateX(0%);	
+	}
+}
+
+/*---------------Item cart---------------*/
+
+.item-cart {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	&__link {
+		width: 100%;
+	}
+
+	&__image {
+		display: block;
+		width: 100px;
+		height: 100px;
+	}
+
+	&__content {
+		padding: 0px 0px 0px 15px;
+		color: #000000;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	&__info {
+		padding: 10px 0px 0px 0px;
+	}
+
+	&__price {
+		
+	}
+
+	&__remove{
+		
+	}
+
+	@media (max-width: 400px) {
+		flex-direction: column;
+
+		&__remove{
+			margin: 15px 0px 0px 0px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		&__image {
+			width: 150px;
+			height: 150px;
+		}
+
+		&__title {
+			font-size: 25px;
+		}
+
+		&__info {
+			font-size: 19px;
+		}
+	}
+}
+
+/*---------------Amount---------------*/
+
+.drawer {
+
+	&__amount-block-drawer {
+
+	}
+}
+.amount-block-drawer {
+	min-width: 240px;
+
+	&__total {
+		display: flex;
+		justify-content: space-between;
+		font-size: 25px;
+		padding: 0px 0px 30px 0px;
+	}
+
+	&__text {
+
+	}
+
+	&__amount {
+
+	}
+
+	&__button {
+		padding: 10px 15px;
+		height: 50px;
+		width: 100%;
+	
+		border-radius: 12px;
+		background: #000000;
+	
+		font-size: 20px;
+		color: #ffffff;
+	}
+
+	@media (max-width: 900px) {
+		padding: 20px 0px 0px 0px;
+	}
+
+	@media (max-width: 900px) {
+		&__total {
+			font-size: 30px;
+		}
+
+		&__button {
+			height: 60px;
+			font-size: 23px;
+		}
+	}
+}

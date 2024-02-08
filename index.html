@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabel=0">
+	<meta name="description" content="Бренд одежды évanouir, Худи, Футболки, Лонгсливы, Шарфы">
+	<meta name="keywords" content="ÉVANOUIR, одежда, худи, футболка, шарф">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,900&display=swap"
+		rel="stylesheet" />
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>évanouir</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__main-menu main-menu">
+				<div class="main-menu__container _container">
+					<a href="index.html" class="main-menu__logo">évanouir</a>
+					<nav class="main-menu__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<div class="menu__link link">
+									<div class="link__button cart-button">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M8 22C8.55228 22 9 21.5523 9 21C9 20.4477 8.55228 20 8 20C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22Z"
+												stroke="black" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M19 22C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20C18.4477 20 18 20.4477 18 21C18 21.5523 18.4477 22 19 22Z"
+												stroke="black" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M2.05005 2.04999H4.05005L6.71005 14.47C6.80763 14.9248 7.06072 15.3315 7.42576 15.6198C7.7908 15.9082 8.24495 16.0603 8.71005 16.05H18.49C18.9452 16.0493 19.3865 15.8933 19.7411 15.6078C20.0956 15.3224 20.3422 14.9245 20.4401 14.48L22.09 7.04999H5.12005"
+												stroke="black" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+										<span class="cart-button__counter">0</span>
+									</div>
+								</div>
+							</li>
+							<li class="menu__item">
+								<div class="menu__link link">
+									<div class="link__button profile-button">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18 20C18 18.4087 17.3679 16.8826 16.2426 15.7574C15.1174 14.6321 13.5913 14 12 14C10.4087 14 8.88258 14.6321 7.75736 15.7574C6.63214 16.8826 6 18.4087 6 20"
+												stroke="black" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M12 14C14.2091 14 16 12.2091 16 10C16 7.79086 14.2091 6 12 6C9.79086 6 8 7.79086 8 10C8 12.2091 9.79086 14 12 14Z"
+												stroke="black" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+												stroke="black" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__drawer drawer">
+				<div class="drawer__container">
+					<div class="drawer__body">
+						<div class="drawer__header-block header-block">
+							<h2 class="header-block__title">Корзина</h2>
+							<div class="header-block__cancel _button-svg">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>													
+							</div>
+						</div>
+						<div class="drawer__items">
+							<div class="drawer__column">
+								<div class="drawer__item-cart item-cart">
+									<a href="show-details.html" class="item-cart__link">
+										<div class="item-cart__wrapper">
+											<div class="item-cart__image _ibg">
+												<img src="assets/images/photos/bomber1.png" alt="bomber">
+											</div>
+											<div class="item-cart__content">
+												<h3 class="item-cart__title">Bomber</h3>
+												<p class="item-cart__info">
+													<span class="item-cart__count">2 X</span>
+													<span class="item-cart__price">6200 р.</span>
+												</p>
+											</div>
+										</div>
+									</a>
+									<div class="item-cart__remove _button-svg">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>													
+									</div>
+								</div>
+							</div>
+							<div class="drawer__column">
+								<div class="drawer__item-cart item-cart">
+									<a href="show-details.html" class="item-cart__link">
+										<div class="item-cart__wrapper">
+											<div class="item-cart__image _ibg">
+												<img src="assets/images/photos/bomber1.png" alt="bomber">
+											</div>
+											<div class="item-cart__content">
+												<h3 class="item-cart__title">Bomber</h3>
+												<p class="item-cart__info">
+													<span class="item-cart__count">2 X</span>
+													<span class="item-cart__price">6200 р.</span>
+												</p>
+											</div>
+										</div>
+									</a>
+									<div class="item-cart__remove _button-svg">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>													
+									</div>
+								</div>
+							</div>
+							<div class="drawer__column">
+								<div class="drawer__item-cart item-cart">
+									<a href="show-details.html" class="item-cart__link">
+										<div class="item-cart__wrapper">
+											<div class="item-cart__image _ibg">
+												<img src="assets/images/photos/bomber1.png" alt="bomber">
+											</div>
+											<div class="item-cart__content">
+												<h3 class="item-cart__title">Bomber</h3>
+												<p class="item-cart__info">
+													<span class="item-cart__count">2 X</span>
+													<span class="item-cart__price">6200 р.</span>
+												</p>
+											</div>
+										</div>
+									</a>
+									<div class="item-cart__remove _button-svg">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>													
+									</div>
+								</div>
+							</div>
+							<div class="drawer__column">
+								<div class="drawer__item-cart item-cart">
+									<a href="show-details.html" class="item-cart__link">
+										<div class="item-cart__wrapper">
+											<div class="item-cart__image _ibg">
+												<img src="assets/images/photos/bomber1.png" alt="bomber">
+											</div>
+											<div class="item-cart__content">
+												<h3 class="item-cart__title">Bomber</h3>
+												<p class="item-cart__info">
+													<span class="item-cart__count">2 X</span>
+													<span class="item-cart__price">6200 р.</span>
+												</p>
+											</div>
+										</div>
+									</a>
+									<div class="item-cart__remove _button-svg">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>													
+									</div>
+								</div>
+							</div>
+							<div class="drawer__column">
+								<div class="drawer__item-cart item-cart">
+									<a href="show-details.html" class="item-cart__link">
+										<div class="item-cart__wrapper">
+											<div class="item-cart__image _ibg">
+												<img src="assets/images/photos/bomber1.png" alt="bomber">
+											</div>
+											<div class="item-cart__content">
+												<h3 class="item-cart__title">Bomber</h3>
+												<p class="item-cart__info">
+													<span class="item-cart__count">2 X</span>
+													<span class="item-cart__price">6200 р.</span>
+												</p>
+											</div>
+										</div>
+									</a>
+									<div class="item-cart__remove _button-svg">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>													
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="drawer__amount-block amount-block-drawer">
+							<div class="amount-block-drawer__total">
+								<span class="amount-block-drawer__text">Итого:</span>
+								<span class="amount-block-drawer__amount">12400 р.</span>
+							</div>
+							<a href="cart.html" class="amount-block-drawer__button _button">Оформить заказ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__closer"></div>
+			<div class="main__content content">
+				<div class="content__container _container">
+					<div class="content__body">
+						<div class="content__sidebar sidebar">
+							<div class="sidebar__arrows">
+								<div class="sidebar__arrow arrow-right">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 18L15 12L9 6" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="sidebar__content">
+								<div class="sidebar__container">
+									<form class="sidebar__body">
+										<div class="sidebar__header-block header-block">
+											<h2 class="header-block__title">Фильтрация</h2>
+											<div class="header-block__cancel _button-svg">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</div>
+										</div>
+										<div class="sidebar__columns">
+											<div class="sidebar__column">
+												<div class="sidebar__filter filter">
+													<h3 class="filter__title">Категории</h3>
+													<div class="filter__content">		
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Футболки</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Толстовки</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Лонгсливы</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Свитшоты</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Джинсы</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Носки</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Рубашки</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">Шорты</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="sidebar__column">
+												<div class="sidebar__filter filter">
+													<h3 class="filter__title">Размеры</h3>
+													<div class="filter__content">		
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">XS</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox"  name="filter_option">
+															<span class="option__title">S</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox"  name="filter_option">
+															<span class="option__title">M</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox"  name="filter_option">
+															<span class="option__title">L</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">XL</span>
+														</label>
+														<label class="filter__option option">
+															<input class="option__check" type="checkbox" name="filter_option">
+															<span class="option__title">XXL</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="sidebar__column">
+												<div class="sidebar__filter filter">
+													<h3 class="filter__title">Цена</h3>
+													<div class="filter__content slider">
+														<div class="slider__range">
+															<span class="slider__selected"></span>
+														</div>
+														<div class="slider__input">
+															<input class="slider__dot" type="range" min="0" max="10000" value="0" step="10">
+															<input class="slider__dot" type="range" min="0" max="10000" value="10000" step="10">
+														</div>
+														<div class="slider__price">
+															<input class="slider__value" type="number" name="min" value="0">
+															<span class="slider__separator">&ndash;</span>
+															<input class="slider__value" type="number" name="max" value="10000">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sidebar__button-block">
+												<button class="sidebar__button _button" type="submit">Применить</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="content__products products">
+							<div class="products__container">
+								<div class="products__header">
+									<div class="products__search search">
+										<input class="search__field" type="text" name="search" placeholder="Поиск">
+										<span class="search__button">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M21 21L16.7 16.7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>											
+										</span>
+									</div>
+									<div class="products__sort sort">
+										<select class="sort__sort-select" name="sort">
+											<option value="">Порядок: по умолчанию</option>
+											<option value="">Цена: по возрастанию</option>
+											<option value="">Цена: по убыванию</option>
+											<option value="">Порядок: сначала новые</option>
+											<option value="">Порядок: сначала старые</option>
+										</select>
+									</div>
+								</div>
+								<div class="products__body">
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/bomber1.png" alt="bomber">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Bomber</h3>
+													<span class="item-product__price">6200 р.</span>
+													<span class="item-product__out-of-stock">Нет в наличии</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/cargo_pants_black1.png" alt="cargo_pants">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Cargo pants</h3>
+													<span class="item-product__price">5000 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/puffer-jacket_black1.jpg" alt="black jacket">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Black jacket</h3>
+													<span class="item-product__price">7500 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/puffer-jacket_white1.jpg" alt="white jacket">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">White jacket</h3>
+													<span class="item-product__price">8500 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/puffer_black1.jpg" alt="black puffer">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Black puffer</h3>
+													<span class="item-product__price">8400 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/puffer_clouds1.jpg" alt="clouds puffer">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Clouds puffer</h3>
+													<span class="item-product__price">6200 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/puffer_sand1.jpg" alt="sand puffer">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Sand puffer</h3>
+													<span class="item-product__price">7300 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/shirt1.png" alt="shirt">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Shirt</h3>
+													<span class="item-product__price">3700 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/spidey_gloves1.jpg" alt="spidey gloves">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Spidey gloves</h3>
+													<span class="item-product__price">2500 р.</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__pagination pagination">
+				<div class="pagination__container _container">
+					<ul class="pagination__body">
+						<li class="pagination__button">
+							<a href="#" class="pagination__link _button-svg">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 18L9 12L15 6" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</a>
+						</li>
+						<li class="pagination__button">
+							<a href="#" class="pagination__link _button-svg active">1</a>
+						</li>
+						<li class="pagination__button">
+							<a href="#" class="pagination__link _button-svg">2</a>
+						</li>
+						<li class="pagination__button">
+							<a href="#" class="pagination__link _button-svg">3</a>
+						</li>
+						<li class="pagination__button">
+							<a href="#" class="pagination__link _button-svg">4</a>
+						</li>
+						<li class="pagination__button">
+							<a href="#" class="pagination__link _button-svg">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 18L15 12L9 6" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__bottom">
+				<div class="footer__container _container">
+					<div class="footer__body">
+						<div class="footer__copyright">
+							<span>ÉVANOUIR © 2023</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/jquery.v3.6.0.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/price-slider.js"></script>
+</body>
+
+</html>

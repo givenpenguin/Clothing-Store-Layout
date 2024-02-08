@@ -1,0 +1,23 @@
+.footer {
+	padding: 30px 0px;
+	background-color: #dddddd40;
+	max-height: 80px;
+
+	&__bottom {
+
+	}
+
+	&__container {
+
+	}
+
+	&__body {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__copyright {
+		color: #3d3d3d;
+		font-size: 14px;
+	}
+}
