@@ -3,6 +3,18 @@ jQuery(function ($) {
 
 	/* ================== Simple buttons ================== */
 
+	$(".tab-header__link").on("click", function() {
+		$(".tab-header__link").removeClass("active");
+		$(this).addClass("active");
+	});
+
+	$(".tab-main__link").on("click", function() {
+		$(".tab-main__link").removeClass("active");
+		$(this).addClass("active");
+	});
+
+
+
 	$(".main__closer").on("click", function() {
 		$(".sidebar__content").removeClass("active");
 		$(".drawer").removeClass("active");
@@ -13,6 +25,16 @@ jQuery(function ($) {
 		$(".drawer").removeClass("active");
 		$(".sidebar__content").removeClass("active");
 		$(".main__closer").fadeOut();
+	});
+
+	$(".burger-menu").on("click", function() {
+		if($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(".tab-main").removeClass("active");
+		} else {
+			$(this).addClass("active");
+			$(".tab-main").addClass("active");
+		}
 	});
 	
 
