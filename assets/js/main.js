@@ -42,6 +42,11 @@ jQuery(function ($) {
 		$(".drawer").addClass("active");
 		$(".main__closer").fadeIn();
 	});
+
+	$(".details__cart-button").on("click", function() {
+		$(".drawer").addClass("active");
+		$(".main__closer").fadeIn();
+	});
 	
 
 	$(".arrow-right").on("click", function() {

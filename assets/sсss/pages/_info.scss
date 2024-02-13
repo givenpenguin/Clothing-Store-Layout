@@ -1,0 +1,99 @@
+/*---------------Main---------------*/
+.main {
+
+    &__delivery {
+        
+    }
+}
+.info {
+    padding: 100px 0px 0px 0px;
+
+    &__container {
+
+    }
+
+    &__body {
+        text-align: center;
+    }
+
+    &__info-block {
+
+    }
+}
+
+.info-block {
+    &__header-block {
+        padding: 0px 0px 30px 0px;
+    }
+
+    &__title {
+        font-size: 25px;
+        font-weight: 550;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 510;
+        padding: 0px 0px 15px 0px;
+    }
+
+    &__content {
+        
+    }
+
+    &__text {
+        line-height: 1.5;
+        max-width: 600px;
+        margin: 0px auto 30px auto;
+    }
+
+    &__text:last-child {
+        margin: 0px auto 0px auto;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__icon {
+        
+    }
+
+    @media (max-width: 700px) {
+        &__icon {
+            margin: 0px 30px 30px 0px;
+        }
+    }
+
+    &:not(:last-child) {
+        padding: 0px 0px 30px 0px;
+    }
+}
+
+.left-side {
+    text-align: left;
+}
+
+.icon-visa {
+    width: 100px;
+    height: 30px;
+}
+
+.icon-mastercard {
+    width: 90px;
+    height: 70px;
+}
+
+.icon-mir {
+    width: 100px;
+    height: 30px;
+}
+
+.icon-sbp {
+    width: 100px;
+    height: 50px;
+}
