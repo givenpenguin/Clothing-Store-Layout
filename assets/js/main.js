@@ -11,8 +11,9 @@ jQuery(function ($) {
 	$(".tab-main__link").on("click", function() {
 		$(".tab-main__link").removeClass("active");
 		$(this).addClass("active");
+		$(".tab-main").removeClass("active");
+		$(".burger-menu").removeClass("active");
 	});
-
 
 
 	$(".main__closer").on("click", function() {
