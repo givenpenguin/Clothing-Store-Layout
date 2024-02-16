@@ -5,9 +5,6 @@
 @import "pages/_cart";
 @import "pages/_show-details";
 @import "pages/_info";
-@import "pages/_public-offer";
-@import "pages/_privacy-policy";
-
 
 /*-------------------------------------*/
 /*---------------General---------------*/
@@ -172,6 +169,10 @@ label {
 
 	&__item {
 		margin: 10px auto;
+	}
+
+	&__link-wrapper {
+
 	}
 
 	&__link {
@@ -483,6 +484,7 @@ label {
 	}
 }
 .products {
+	width: 100%;
 
 	&__container {
 		
