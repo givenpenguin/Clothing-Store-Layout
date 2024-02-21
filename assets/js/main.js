@@ -7,7 +7,7 @@ jQuery(function ($) {
 		$(".tab-header__link").removeClass("active");
 		$(this).addClass("active");
 	});
-
+``
 	$(".tab-main__link").on("click", function() {
 		$(".tab-main__link").removeClass("active");
 		$(this).addClass("active");

@@ -1017,6 +1017,53 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
 }
 
+.main__error {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.error__content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+.error__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.error__title {
+  font-size: 100px;
+  margin: 0 0 10px 0;
+}
+.error__text {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+.error__link {
+  font-size: 20px;
+  color: #000000;
+  padding: 3px 0;
+  border-bottom: 1px #000000 solid;
+}
+.error__link:hover {
+  color: #797979;
+}
+@media (max-width: 500) {
+  .error__title {
+    font-size: 20px;
+  }
+  .error__text {
+    font-size: 25px;
+  }
+  .error__link {
+    font-size: 20px;
+  }
+}
+
 /*-------------------------------------*/
 /*---------------General---------------*/
 /*-------------------------------------*/
@@ -1495,6 +1542,7 @@ label {
   height: 30px;
 }
 .sort__sort-select {
+  cursor: pointer;
   padding: 0 5px;
   border: 1px solid rgba(179, 179, 179, 0.2509803922);
   width: 100%;

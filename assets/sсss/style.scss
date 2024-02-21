@@ -5,6 +5,7 @@
 @import "pages/_cart";
 @import "pages/_show-details";
 @import "pages/_info";
+@import "pages/_error";
 
 /*-------------------------------------*/
 /*---------------General---------------*/
@@ -623,6 +624,7 @@ label {
 	height: 30px;
 	
 	&__sort-select {
+		cursor: pointer;
 		padding: 0 5px;
 		border: 1px solid #b3b3b340;
 		width: 100%;
