@@ -7,12 +7,23 @@ jQuery(function ($) {
 		$(".tab-header__link").removeClass("active");
 		$(this).addClass("active");
 	});
-``
+	
 	$(".tab-main__link").on("click", function() {
 		$(".tab-main__link").removeClass("active");
 		$(this).addClass("active");
 		$(".tab-main").removeClass("active");
 		$(".burger-menu").removeClass("active");
+	});
+
+
+	$(".filter__header-block").on("click", function() {
+		if($(this).parent().find(".filter__content").hasClass("active")) {
+			$(this).removeClass("active");
+			$(this).parent().find(".filter__content").removeClass("active");
+		} else {
+			$(this).addClass("active");
+			$(this).parent().find(".filter__content").addClass("active");
+		}
 	});
 
 

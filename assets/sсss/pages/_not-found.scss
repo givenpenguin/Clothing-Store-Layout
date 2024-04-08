@@ -16,9 +16,10 @@
 
     &__content {
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 0;
         right: 0;
+        min-width: 360px;
     }
 
     &__column {
@@ -50,9 +51,9 @@
 		}
     }
     
-    @media (max-width: 500) {
+    @media (max-width: 500px) {
         &__title {
-            font-size: 20px;
+            font-size: 80px;
         }
 
         &__text {
@@ -60,7 +61,7 @@
         }
     
         &__link {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 }
