@@ -43,6 +43,7 @@
 	&__body {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 	}
 
 	&__gallery {
@@ -93,6 +94,7 @@
 
 		&__image, &__image-active {
 			padding: 0 0 25% 0;
+			width: 25%;
 
 			&:not(:last-child) {
 				margin: 0px 10px 0px 0px;
@@ -103,7 +105,7 @@
 .carousel {
 	position: relative;
 	margin: 0 20px 0 0;
-	width: 100%;
+	width: 85%;
 
 	&__main-images {
 		
@@ -135,6 +137,9 @@
 	@media (max-width: 1000px) {
 		margin: 0;
 	}
+	@media (max-width: 700px) {
+		width: 100%;
+	}
 }
 .main-images {
 	display: flex;
@@ -156,7 +161,7 @@
 	padding: 0px 0px 100px 0px;
 
 	&__body {
-
+		
 	}
 
 	&__header-block {
