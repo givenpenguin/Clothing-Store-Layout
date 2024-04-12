@@ -3,6 +3,30 @@ jQuery(function ($) {
 
 	/* ================== Simple buttons ================== */
 
+	$(".tab-header__link").on("click", function() {
+		$(".tab-header__link").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	$(".tab-main__link").on("click", function() {
+		$(".tab-main__link").removeClass("active");
+		$(this).addClass("active");
+		$(".tab-main").removeClass("active");
+		$(".burger-menu").removeClass("active");
+	});
+
+
+	$(".filter__header-block").on("click", function() {
+		if($(this).parent().find(".filter__content").hasClass("active")) {
+			$(this).removeClass("active");
+			$(this).parent().find(".filter__content").removeClass("active");
+		} else {
+			$(this).addClass("active");
+			$(this).parent().find(".filter__content").addClass("active");
+		}
+	});
+
+
 	$(".main__closer").on("click", function() {
 		$(".sidebar__content").removeClass("active");
 		$(".drawer").removeClass("active");
@@ -14,9 +38,24 @@ jQuery(function ($) {
 		$(".sidebar__content").removeClass("active");
 		$(".main__closer").fadeOut();
 	});
+
+	$(".burger-menu").on("click", function() {
+		if($(this).hasClass("active")) {
+			$(this).removeClass("active");
+			$(".tab-main").removeClass("active");
+		} else {
+			$(this).addClass("active");
+			$(".tab-main").addClass("active");
+		}
+	});
 	
 
 	$(".cart-button").on("click", function() {
+		$(".drawer").addClass("active");
+		$(".main__closer").fadeIn();
+	});
+
+	$(".details__cart-button").on("click", function() {
 		$(".drawer").addClass("active");
 		$(".main__closer").fadeIn();
 	});

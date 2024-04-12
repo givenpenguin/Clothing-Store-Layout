@@ -80,13 +80,13 @@
 		}
 
 		&__dot::-webkit-slider-thumb {
-			height: 20px;
-			width: 20px;
+			height: 19px;
+			width: 19px;
 		}
 
 		&__dot::-moz-range-thumb {
-			height: 15px;
-			width: 15px;
+			height: 14px;
+			width: 14px;
 		}
 
 		&__separator {
@@ -95,7 +95,7 @@
 
 		&__value {
 			border: 2px solid #f1f1f1;
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 }

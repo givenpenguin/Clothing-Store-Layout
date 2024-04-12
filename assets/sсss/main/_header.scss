@@ -1,4 +1,5 @@
 .header {
+
 	&__main-menu {
 
 	}
@@ -19,10 +20,12 @@
     }
 	
     &__logo {
-        font-size: 24px;
-        font-weight: 700;
-        color: inherit;
+
     }
+
+	&__tab-header {
+
+	}
 
     &__menu {
        
@@ -37,6 +40,54 @@
 		}
     }
 }
+
+.logo {
+	
+	&__link {
+        font-size: 24px;
+        font-weight: 700;
+        color: inherit;
+	}
+}
+
+.tab-header {
+
+	&__list {
+		font-size: 14px;
+		display: flex;
+		flex-direction: row;
+
+		@media (max-width: 900px) {
+			display: none;
+		}
+	}
+
+	&__item {
+		
+	}
+
+	&__item:not(:last-child) {
+		margin: 0px 20px 0px 0px;
+	}
+
+	&__link-wrapper {
+
+	}
+
+	&__link {
+		color: #000000;
+
+		&:hover {
+			color:#797979;
+		}
+
+		&.active {
+			color:#797979;
+			border-bottom: 1px #797979 solid;
+		}
+	}
+}
+
 .menu {
 
     &__list {
@@ -48,7 +99,7 @@
 	&__item {
 
 		&:not(:last-child) {
-			margin: 0 25px 0 0;
+			margin: 0 20px 0 0;
 		}
 	}
 
@@ -85,7 +136,6 @@
 		}
 	}	
 }
-
 .cart-button {
 
 	&__counter {
@@ -97,6 +147,38 @@
 		&::after {
 			content: ')';
 		}
+	}
+}
+.profile-button {
+
+}
+.burger-menu {
+	margin: 0px 0px 0px 10px;
+
+	@media (min-width: 900px) {
+		display: none;
+	}
+
+	& path {
+		transition: transform 0.25s;
+	}
+
+	&.active path:nth-of-type(1) {
+		display: none;
+	}
+
+	&.active path:nth-of-type(2) {
+		transform: rotate(-45deg);
+		transform-origin: 50% 50%;
+	}
+
+	&.active path:nth-of-type(3) {
+		transform: rotate(45deg);
+		transform-origin: 50% 50%;
+	}
+
+	&.active path:nth-of-type(4) {
+		display: none;
 	}
 }
 
@@ -138,7 +220,7 @@
 		display: flex;
 		flex-direction: column;
 		padding: 30px 20px;
-		height: 100%;
+		min-height: 100vh;
 	}
 
 	&__header-block {
@@ -147,11 +229,11 @@
 		justify-content: space-between;
 		align-items: center;
 		min-height: 50px;
+		margin: 0px 0px 10px 0px;
 	}
 
 	&__items {
 		flex: 1 1 auto;
-		margin: 10px 0px 0px 0px;
 	}
 	
 	&__column {
@@ -216,7 +298,7 @@
 	}
 
 	&__title {
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: 600;
 	}
 
@@ -242,16 +324,16 @@
 
 	@media (max-width: 900px) {
 		&__image {
-			width: 150px;
-			height: 150px;
+			width: 120px;
+			height: 120px;
 		}
 
 		&__title {
-			font-size: 25px;
+			font-size: 21px;
 		}
 
 		&__info {
-			font-size: 19px;
+			font-size: 16px;
 		}
 	}
 }
@@ -270,7 +352,7 @@
 	&__total {
 		display: flex;
 		justify-content: space-between;
-		font-size: 25px;
+		font-size: 22px;
 		padding: 0px 0px 30px 0px;
 	}
 
@@ -290,7 +372,7 @@
 		border-radius: 12px;
 		background: #000000;
 	
-		font-size: 20px;
+		font-size: 19px;
 		color: #ffffff;
 	}
 
@@ -300,12 +382,12 @@
 
 	@media (max-width: 900px) {
 		&__total {
-			font-size: 30px;
+			font-size: 27px;
 		}
 
 		&__button {
 			height: 60px;
-			font-size: 23px;
+			font-size: 22px;
 		}
 	}
 }
