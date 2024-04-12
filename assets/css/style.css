@@ -1666,6 +1666,7 @@ label, .filter__title {
 .pagination__link.active {
   background-color: #000000;
   color: #FFFFFF;
+<<<<<<< HEAD
 }
 
 .message {
@@ -1681,3 +1682,6 @@ label, .filter__title {
   justify-content: center;
   height: 150px;
 }/*# sourceMappingURL=style.css.map */
+=======
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> 14df6afb3481c2ba534f5102774502f0ad6673e8
