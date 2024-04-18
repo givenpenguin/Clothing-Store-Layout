@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*/
 .drawer {
   position: fixed;
-  width: 420px;
+  width: 480px;
   height: 100%;
   right: 0;
   top: 0;
@@ -299,11 +299,21 @@ h1, h2, h3, h4, h5, h6 {
 .item-cart__info {
   padding: 10px 0px 0px 0px;
 }
-@media (max-width: 400px) {
+.item-cart__controls {
+  display: flex;
+  justify-content: space-between;
+}
+.item-cart__quantity {
+  margin: 0px 40px 0px 0px;
+}
+@media (max-width: 500px) {
   .item-cart {
     flex-direction: column;
   }
-  .item-cart__remove {
+  .item-cart__quantity {
+    margin: 0px 30px 0px 0px;
+  }
+  .item-cart__controls {
     margin: 15px 0px 0px 0px;
   }
 }
@@ -395,6 +405,15 @@ h1, h2, h3, h4, h5, h6 {
   .footer__socials {
     margin: 30px 0px 0px 0px;
   }
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+}
+.quantity__value {
+  width: 50px;
+  text-align: center;
 }
 
 .slider__range {
@@ -546,15 +565,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 22px;
     margin: 15px 0px 0px 0px;
   }
-}
-
-.quantity {
-  display: flex;
-  flex-direction: row;
-}
-.quantity__value {
-  width: 60px;
-  text-align: center;
 }
 
 /*-------------------------------------------*/
@@ -1666,7 +1676,6 @@ label, .filter__title {
 .pagination__link.active {
   background-color: #000000;
   color: #FFFFFF;
-<<<<<<< HEAD
 }
 
 .message {
@@ -1682,6 +1691,3 @@ label, .filter__title {
   justify-content: center;
   height: 150px;
 }/*# sourceMappingURL=style.css.map */
-=======
-}/*# sourceMappingURL=style.css.map */
->>>>>>> 14df6afb3481c2ba534f5102774502f0ad6673e8
