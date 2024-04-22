@@ -194,7 +194,7 @@
 }
 .drawer {
 	position: fixed;
-    width: 480px;
+    width: 500px;
 	height: 100%;
     right: 0;
     top: 0;
@@ -244,7 +244,6 @@
 	}
 
 	@media (max-width: 900px) {
-		width: 520px;
 
 		&__header-block {
 			min-height: 70px;
@@ -289,20 +288,25 @@
 		display: block;
 		width: 100px;
 		height: 100px;
+		margin: 0px 15px 0px 0px;
 	}
 
 	&__content {
-		padding: 0px 0px 0px 15px;
 		color: #000000;
 	}
 
 	&__title {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 600;
 	}
 
 	&__info {
+		font-size: 14px;
 		padding: 10px 0px 0px 0px;
+	}
+
+	&__size {
+
 	}
 
 	&__price {
@@ -334,7 +338,7 @@
 		}
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 700px) {
 		&__image {
 			width: 120px;
 			height: 120px;
@@ -390,16 +394,5 @@
 
 	@media (max-width: 900px) {
 		padding: 20px 0px 0px 0px;
-	}
-
-	@media (max-width: 900px) {
-		&__total {
-			font-size: 27px;
-		}
-
-		&__button {
-			height: 60px;
-			font-size: 22px;
-		}
 	}
 }

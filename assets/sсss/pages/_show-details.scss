@@ -187,7 +187,7 @@
 	&__cart-button {
 		text-transform: uppercase;
 		margin: 10px 0;
-		padding: 10px 30px;
+		padding: 10px 10px;
 		height: 40px;
 		width: 160px;
 		border-radius: 12px;
@@ -198,7 +198,25 @@
 		font-weight: 600;
 		color: #FFFFFF;
 
-		&.disabled {
+		&:before {
+			content: 'В корзину';
+		}
+
+		&.in-cart {
+			&:before {
+				content: 'Уже в корзине';
+			}
+			
+			pointer-events: none;
+			background: #9e9e9e;
+			color: #e6e6e6;
+		}
+
+		&.out-of-stock {
+			&:before {
+				content: 'Нет в наличии';
+			}
+			
 			pointer-events: none;
 			background: #9e9e9e;
 			color: #e6e6e6;
