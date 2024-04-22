@@ -123,18 +123,37 @@
 												<img src="assets/images/photos/bomber1.png" alt="bomber">
 											</div>
 											<div class="item-cart__content">
-												<h3 class="item-cart__title">Bomber</h3>
+												<h3 class="item-cart__title">Spidey gloves</h3>
 												<p class="item-cart__info">
-													<span class="item-cart__price">6200 р.</span>
+													<span class="item-cart__size">Размер: M</span>
+												</p>
+												<p class="item-cart__info">
+													<span class="item-cart__price">Цена: 6200 р.</span>
 												</p>
 											</div>
 										</div>
 									</a>
-									<div class="item-cart__remove _button-svg">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>													
+									<div class="item-cart__controls">
+										<div class="item-cart__quantity quantity">
+											<button class="quantity__button decrease-button _button-svg" type="button">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</button>
+											<input class="quantity__value" value="1" type="number">
+											<button class="quantity__button increase-button _button-svg" type="button">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5 12H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M12 5V19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="item-cart__remove _button-svg">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>													
+										</div>
 									</div>
 								</div>
 							</div>
@@ -145,6 +164,13 @@
 								<span class="amount-block-drawer__amount">12400 р.</span>
 							</div>
 							<a href="cart.html" class="amount-block-drawer__button _button">Оформить заказ</a>
+						</div>
+						<div class="drawer__message message">
+							<div class="message__content drawer-message__content">
+								<div class="message__column">
+									<div class="message__text">Корзина пуста</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -478,45 +504,52 @@
 										</div>
 									</div>
 								</div>
+								<div class="products__pagination pagination">
+									<div class="pagination__container _container">
+										<ul class="pagination__body">
+											<li class="pagination__button">
+												<a href="#" class="pagination__link _button-svg">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path d="M15 18L9 12L15 6" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</a>
+											</li>
+											<li class="pagination__button">
+												<a href="#" class="pagination__link _button-svg active">1</a>
+											</li>
+											<li class="pagination__button">
+												<a href="#" class="pagination__link _button-svg">2</a>
+											</li>
+											<li class="pagination__button">
+												<a href="#" class="pagination__link _button-svg">3</a>
+											</li>
+											<li class="pagination__button">
+												<a href="#" class="pagination__link _button-svg">4</a>
+											</li>
+											<li class="pagination__button">
+												<a href="#" class="pagination__link _button-svg">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 18L15 12L9 6" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="products__products-message products-message">
+									<div class="products-message__content">
+										<div class="products-message__column">
+											<div class="products-message__text">Товары не найдены</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="main__pagination pagination">
-				<div class="pagination__container _container">
-					<ul class="pagination__body">
-						<li class="pagination__button">
-							<a href="#" class="pagination__link _button-svg">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M15 18L9 12L15 6" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round"
-										stroke-linejoin="round" />
-								</svg>
-							</a>
-						</li>
-						<li class="pagination__button">
-							<a href="#" class="pagination__link _button-svg active">1</a>
-						</li>
-						<li class="pagination__button">
-							<a href="#" class="pagination__link _button-svg">2</a>
-						</li>
-						<li class="pagination__button">
-							<a href="#" class="pagination__link _button-svg">3</a>
-						</li>
-						<li class="pagination__button">
-							<a href="#" class="pagination__link _button-svg">4</a>
-						</li>
-						<li class="pagination__button">
-							<a href="#" class="pagination__link _button-svg">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M9 18L15 12L9 6" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round"
-										stroke-linejoin="round" />
-								</svg>
-							</a>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</main>

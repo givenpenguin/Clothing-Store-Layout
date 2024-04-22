@@ -1,0 +1,19 @@
+.quantity {
+	display: flex;
+	flex-direction: row;
+
+	&__button {
+
+	}
+
+	&__value {
+		width: 50px;
+		text-align: center;
+	}
+}
+.decrease-button {
+
+}
+.increase-button {
+
+}
