@@ -790,8 +790,9 @@ label, .filter__title {
 	}
 }
 
-.message {
+.products-message {
 	display: none;
+	color: #797979;
 
 	&__content {
 
@@ -803,7 +804,6 @@ label, .filter__title {
 
 	&__text {
 		font-size: 17px;
-		color: #797979;
 	}
 
 	&.active {
@@ -811,5 +811,33 @@ label, .filter__title {
 		align-items: center;
 		justify-content: center;
 		height: 150px;
+	}
+}
+
+.message {
+	display: none;
+	color: #797979;
+
+	&__content {
+		position: absolute;
+		left: 0;
+		right: 0;
+		min-width: 360px;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__text {
+
+	}
+
+	&.active {
+		display: block;
 	}
 }

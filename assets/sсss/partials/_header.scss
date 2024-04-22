@@ -233,6 +233,10 @@
 
 	&__items {
 		flex: 1 1 auto;
+
+		&.disable {
+			display: none;
+		}
 	}
 	
 	&__column {
@@ -326,8 +330,12 @@
 
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 550px) {
 		flex-direction: column;
+
+		&__wrapper {
+			justify-content: center;
+		}
 
 		&__quantity {
 			margin: 0px 30px 0px 0px;
@@ -345,7 +353,7 @@
 		}
 
 		&__title {
-			font-size: 21px;
+			font-size: 18px;
 		}
 
 		&__info {
@@ -392,7 +400,24 @@
 		color: #ffffff;
 	}
 
+	&.disable {
+		display: none;
+	}
+
 	@media (max-width: 900px) {
 		padding: 20px 0px 0px 0px;
+	}
+}
+
+.drawer {
+
+	&__message {
+
+	}
+}
+.drawer-message {
+
+	&__content {
+		top: 45%;
 	}
 }
