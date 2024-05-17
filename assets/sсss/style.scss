@@ -52,12 +52,11 @@ label, .filter__title {
 	position: relative;
 
 	img {
-		position: absolute;
 		width: 100%;
 		height: 100%;
 		top: 0;
 		left: 0;
-		object-fit: cover;
+		object-fit: contain;
 	}
 }
 ._button-svg {
@@ -357,22 +356,33 @@ label, .filter__title {
 	}
 
 	&__button-block {
-		width: fit-content;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
-	&__button {
+	&__button-apply {
 		text-transform: uppercase;
 		height: 42px;
 		width: 140px;
 		border-radius: 12px;
-		background: #000000;
+		border: 1px solid #E5E5E5;
+		background: #FFFFFF;
 		font-size: 13px;
 		font-weight: 600;
-		color: #FFFFFF;
+		color: #000000;
 
-		&:not(:last-child) {
-			margin: 0px 0px 10px 0px;
+		&:hover {
+			color: #ffffff;
+			box-shadow: none;
+			background-color: #000000;
 		}
+	}
+
+	&__button-cancel {
+		height: 42px;
+		width: 45px;
+		border-radius: 12px;
 	}
 
 	@media (max-width: 700px) {
@@ -440,10 +450,14 @@ label, .filter__title {
 			width: 300px;
 		}
 
-		&__button {
+		&__button-apply {
 			height: 50px;
 			width: 190px;
 			font-size: 15px;
+		}
+
+		&__button-cancel {
+			display: none;
 		}
 	}	
 }
@@ -582,17 +596,6 @@ label, .filter__title {
 		
 	}
 
-	@media (max-width: 700px) {
-		&__header {
-			flex-direction: column;
-			padding: 0px 0px 30px 0px;
-		}
-
-		&__search {
-			margin: 0px 0px 10px 0px;
-		}
-	}
-
 	@media (min-width: 700px) {
 		&__body {
 			display: flex;
@@ -612,13 +615,22 @@ label, .filter__title {
 		}
 
 		&__column {	
-			margin: 0 0 15px 0;
+			margin: 0 0 20px 0;
 		}
 	}
 
 	@media (max-width: 700px) {
+		&__header {
+			flex-direction: column;
+			padding: 0px 0px 30px 0px;
+		}
+
+		&__search {
+			margin: 0px 0px 10px 0px;
+		}
+
 		&__column {
-			margin: 0 0 30px 0;
+			margin: 0 0 40px 0;
 		}
 	}
 
@@ -658,6 +670,12 @@ label, .filter__title {
 		& svg {
 			width: 20px;
 			height: 20px;
+		}
+	}
+
+	@media (min-width: 900px) {
+		&__cancel {
+			display: none;
 		}
 	}
 
@@ -706,8 +724,9 @@ label, .filter__title {
 
 	&__item-image {
 		display: block;
-		padding: 0 0 100% 0;
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 30px 0px;
+		width: 290px;
+		height: 400px;
 	}
 	
 	&__content {
@@ -727,10 +746,19 @@ label, .filter__title {
 		font-weight: 700;
 	}
 
+	&__price-block {
+		margin: 0px 0px 10px 0px;
+	}
+
 	&__price {
+
+		&.disabled {
+			text-decoration: line-through;
+			color: #b2b2b2;
+		}
 		
 		&:not(:last-child) {
-			margin: 0px 0px 10px 0px;
+			margin: 0px 5px 0px 0px;
 		}
 	}
 
@@ -742,7 +770,7 @@ label, .filter__title {
 
 	@media (max-width: 700px) {
 		&__item-image {
-			margin: 0px 0px 30px 0px;
+			margin: 0px 0px 40px 0px;
 		}
 	}
 
@@ -783,6 +811,7 @@ label, .filter__title {
 	}
 
 	&__link {
+		
 		&.active {
 			background-color: #000000;
 			color: #FFFFFF;

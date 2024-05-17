@@ -120,7 +120,7 @@
 									<a href="show-details.html" class="item-cart__link">
 										<div class="item-cart__wrapper">
 											<div class="item-cart__image _ibg">
-												<img src="assets/images/photos/bomber1.png" alt="bomber">
+												<img src="assets/images/photos/os/classique_pants-1.jpg" alt="bomber">
 											</div>
 											<div class="item-cart__content">
 												<h3 class="item-cart__title">Spidey gloves</h3>
@@ -161,7 +161,10 @@
 						<div class="drawer__amount-block amount-block-drawer">
 							<div class="amount-block-drawer__total">
 								<span class="amount-block-drawer__text">Итого:</span>
-								<span class="amount-block-drawer__amount">12400 р.</span>
+								<div class="amount-block-drawer__price">
+									<span class="amount-block-drawer__amount disabled">12400 р.</span>
+									<span class="amount-block-drawer__discount">12400 р.</span>
+								</div>
 							</div>
 							<a href="cart.html" class="amount-block-drawer__button _button">Оформить заказ</a>
 						</div>
@@ -356,7 +359,13 @@
 											</div>
 										</div>
 										<div class="sidebar__button-block">
-											<button class="sidebar__button _button" type="submit">Применить</button>
+											<button class="sidebar__button-apply _button" type="submit">Применить</button>
+											<div class="sidebar__button-cancel _button-svg">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>												
+											</div>
 										</div>
 									</form>
 								</div>
@@ -371,6 +380,12 @@
 											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 												<path d="M21 21L16.7 16.7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>											
+										</span>
+										<span class="search__button search__cancel">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M18 6L6 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M6 6L18 18" stroke="#3d3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 											</svg>											
 										</span>
 									</div>
@@ -389,11 +404,13 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/bomber1.png" alt="bomber">
+													<img src="assets/images/photos/os/classique_pants-1.jpg" alt="bomber">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Bomber</h3>
-													<span class="item-product__price">6200 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price">6200 р.</span>
+													</div>
 													<span class="item-product__out-of-stock">Нет в наличии</span>
 												</div>
 											</a>
@@ -403,11 +420,30 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/cargo_pants_black1.png" alt="cargo_pants">
+													<img src="assets/images/photos/jacket-1.jpg" alt="bomber">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Bomber</h3>
+													<div class="item-product__price-block">
+														<span class="item-product__price">6200 р.</span>
+													</div>
+													<span class="item-product__out-of-stock">Нет в наличии</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/os/destroyed_jeans-1.jpg" alt="cargo_pants">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Cargo pants</h3>
-													<span class="item-product__price">5000 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -416,11 +452,14 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/puffer-jacket_black1.jpg" alt="black jacket">
+													<img src="assets/images/photos/os/faded_t-shirt-1.jpg" alt="black jacket">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Black jacket</h3>
-													<span class="item-product__price">7500 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -429,11 +468,14 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/puffer-jacket_white1.jpg" alt="white jacket">
+													<img src="assets/images/photos/os/faded_t-shirt-1.jpg" alt="white jacket">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">White jacket</h3>
-													<span class="item-product__price">8500 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -442,11 +484,30 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/puffer_black1.jpg" alt="black puffer">
+													<img src="assets/images/photos/jacket-2.jpg" alt="bomber">
+												</div>
+												<div class="item-product__content">
+													<h3 class="item-product__title">Bomber</h3>
+													<div class="item-product__price-block">
+														<span class="item-product__price">6200 р.</span>
+													</div>
+													<span class="item-product__out-of-stock">Нет в наличии</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="products__column">
+										<div class="products__item-product item-product">
+											<a href="show-details.html" class="item-product__link">
+												<div class="item-product__item-image _ibg">
+													<img src="assets/images/photos/os/heavy_hoodie-1.jpg" alt="black puffer">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Black puffer</h3>
-													<span class="item-product__price">8400 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -455,11 +516,14 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/puffer_clouds1.jpg" alt="clouds puffer">
+													<img src="assets/images/photos/os/heavy_sweatpants-1.jpg" alt="clouds puffer">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Clouds puffer</h3>
-													<span class="item-product__price">6200 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -468,11 +532,14 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/puffer_sand1.jpg" alt="sand puffer">
+													<img src="assets/images/photos/os/faded_t-shirt-3.jpg" alt="sand puffer">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Sand puffer</h3>
-													<span class="item-product__price">7300 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -481,11 +548,14 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/shirt1.png" alt="shirt">
+													<img src="assets/images/photos/os/jersey-1.jpg" alt="shirt">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Shirt</h3>
-													<span class="item-product__price">3700 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -494,11 +564,14 @@
 										<div class="products__item-product item-product">
 											<a href="show-details.html" class="item-product__link">
 												<div class="item-product__item-image _ibg">
-													<img src="assets/images/photos/spidey_gloves1.jpg" alt="spidey gloves">
+													<img src="assets/images/photos/os/zip_hoodie_gray-3.jpg" alt="spidey gloves">
 												</div>
 												<div class="item-product__content">
 													<h3 class="item-product__title">Spidey gloves</h3>
-													<span class="item-product__price">2500 р.</span>
+													<div class="item-product__price-block">
+														<span class="item-product__price disabled">5000 р.</span>
+														<span class="item-product__price">5000 р.</span>
+													</div>
 												</div>
 											</a>
 										</div>
